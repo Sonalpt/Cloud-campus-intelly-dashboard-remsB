@@ -8,63 +8,93 @@
         <title>Intelly Dashboard - remsB</title>
     </head>
     <body>
-        <aside>
-            <nav>
-                <div class="intellyBrand">
-                    <img src="./assets/LOGOTYPE.png" alt="logo intelly">
-                </div>
-                <div class="navigation">
+        <div class="sideAndTopBar">
+            <!-- la barre de navigation statique contenant également le logo "intelly" -->
+            <aside>
+                <nav>
+                    <div class="intellyBrand">
+                        <img src="./assets/LOGOTYPE.png" alt="logo intelly">
+                    </div>
+                    <div class="navigation">
 
-                    <div class="navigation_section">
+                        <div class="navigation_section">
 
-                        <h3>MENU</h3>
+                            <h3>MENU</h3>
 
-                        <div class="navigation_section_component selected">
-                            <img src="./assets/Icon/Glyph/Dashboard.png" alt>
-                            <span class="navigation_component_name">Dashboard</span>
+                            <div class="navigation_section_component selected">
+                                <img src="./assets/Icon/Glyph/Dashboard.png" alt>
+                                <span class="navigation_component_name">Dashboard</span>
+                            </div>
+                            <div class="navigation_section_component">
+                                <img src="./assets/Icon/Glyph/Vector.png" alt>
+                                <span class="navigation_component_name">Order</span>
+                                <img src="./assets/Icon/Glyph/Chevron-down.png"
+                                    alt>
+                            </div>
+                            <div class="navigation_section_component">
+                                <img src="./assets/Icon/Glyph/Report.png" alt>
+                                <span class="navigation_component_name">Report</span>
+                            </div>
+                            <div class="navigation_section_component">
+                                <img src="./assets/Icon/Glyph/Track.png" alt>
+                                <span class="navigation_component_name">Track</span>
+                            </div>
+                            <div class="navigation_section_component">
+                                <img src="./assets/Icon/Glyph/Scredriver.png"
+                                    alt>
+                                <span class="navigation_component_name">Maintainance</span>
+                            </div>
+
                         </div>
-                        <div class="navigation_section_component">
-                            <img src="./assets/Icon/Glyph/Vector.png" alt>
-                            <span class="navigation_component_name">Order</span>
-                            <img src="./assets/Icon/Glyph/Chevron-down.png" alt>
-                        </div>
-                        <div class="navigation_section_component">
-                            <img src="./assets/Icon/Glyph/Report.png" alt>
-                            <span class="navigation_component_name">Report</span>
-                        </div>
-                        <div class="navigation_section_component">
-                            <img src="./assets/Icon/Glyph/Track.png" alt>
-                            <span class="navigation_component_name">Track</span>
-                        </div>
-                        <div class="navigation_section_component">
-                            <img src="./assets/Icon/Glyph/Scredriver.png" alt>
-                            <span class="navigation_component_name">Maintainance</span>
+
+                        <div class="navigation_section">
+
+                            <h3>SYSTEM</h3>
+                            <div class="navigation_section_component">
+                                <img src="./assets/Icon/Glyph/Folder.png" alt>
+                                <span class="navigation_component_name">Master
+                                    Data</span>
+                                <img src="./assets/Icon/Glyph/Chevron-down.png"
+                                    alt>
+                            </div>
+                            <div class="navigation_section_component">
+                                <img src="./assets/Icon/Glyph/User.png" alt>
+                                <span class="navigation_component_name">User</span>
+                            </div>
+                            <div class="navigation_section_component">
+                                <img src="./assets/Icon/Glyph/Multi-user.png"
+                                    alt>
+                                <span class="navigation_component_name">Role</span>
+                            </div>
+
                         </div>
 
                     </div>
+                </nav>
+            </aside>
 
-                    <div class="navigation_section">
+            <!-- La topbar de recherche avec l'entreprise et les notifications -->
+            <div class="topBar">
 
-                        <h3>SYSTEM</h3>
-                        <div class="navigation_section_component">
-                            <img src="./assets/Icon/Glyph/Folder.png" alt>
-                            <span class="navigation_component_name">Master Data</span>
-                            <img src="./assets/Icon/Glyph/Chevron-down.png" alt>
-                        </div>
-                        <div class="navigation_section_component">
-                            <img src="./assets/Icon/Glyph/User.png" alt>
-                            <span class="navigation_component_name">User</span>
-                        </div>
-                        <div class="navigation_section_component">
-                            <img src="./assets/Icon/Glyph/Multi-user.png" alt>
-                            <span class="navigation_component_name">Role</span>
-                        </div>
-
-                    </div>
-
+                <div class="searchBar">
+                    <input type="search" name="search" id="search"
+                        placeholder="Search">
+                    <img src="./assets/Icon.png" alt>
                 </div>
-            </nav>
-        </aside>
+                <div class="enterprise">
+                    <div class="enterprise_icon">
+                        <img src="./assets/Emoticon.png" alt>
+                    </div>
+                    <span>Delicious Burger</span>
+                    <img src="./assets/Icon/Glyph/Chevron-down.png" alt>
+
+                    <div class="enterprise_notification">
+                        <img src="./assets/Notif Icon.png" alt>
+                    </div>
+                </div>
+
+            </div>
+        </div>
 
     </body>
 </html>
