@@ -4,6 +4,7 @@ body {
   font-weight: 300;
   width: 100vw;
   height: 100vh;
+  background-color: rgb(246, 248, 250);
 }
 
 .container {
@@ -26,10 +27,11 @@ body {
   align-items: center;
   justify-content: center;
   box-shadow: 0px 1px 0px 0px rgba(229, 229, 229, 0.65);
+  background-color: white;
 }
 .container aside nav .navigation {
   color: #767D87;
-  height: 90%;
+  height: 100%;
   width: 100%;
   background-color: rgba(1, 0, 57, 0.04);
 }
@@ -147,10 +149,21 @@ body {
 }
 .container main .topBar .enterprise_notification {
   padding-left: 32px;
+  position: relative;
 }
 .container main .topBar .enterprise_notification img {
   width: 12.8px;
   height: 16px;
+}
+.container main .topBar .enterprise_notification div {
+  width: 6px;
+  height: 6px;
+  background-color: rgb(236, 82, 82);
+  border-radius: 30px;
+  position: absolute;
+  top: 0%;
+  left: 90%;
+  border: 1px solid white;
 }
 .container main .dashboard {
   background-color: rgb(246, 248, 250);
@@ -411,6 +424,7 @@ body {
   background-color: white;
   border-radius: 10px;
   padding-bottom: 9px;
+  margin-bottom: 24.5px;
 }
 .container main .dashboard .overview_search {
   display: flex;
@@ -500,4 +514,44 @@ body {
 }
 .container main .dashboard .overview_list li span:nth-child(5) {
   width: 15%;
+}
+.container main .dashboard .pages {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  width: 75vw;
+  margin-top: 24.5px;
+  margin-left: 40px;
+}
+.container main .dashboard .pages span:nth-child(1) {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(134, 134, 140);
+  height: 18px;
+}
+.container main .dashboard .pages span:nth-child(7) {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(1, 0, 57);
+  height: 18px;
+}
+.container main .dashboard .pages .number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  width: 35px;
+  background-color: white;
+  margin-right: 6px;
+  border-radius: 6px;
+}
+.container main .dashboard .pages .number:nth-child(2) {
+  background-color: rgb(80, 65, 120);
+  color: white;
+  margin-left: 12px;
+}
+.container main .dashboard .pages .number:nth-child(6) {
+  margin-right: 12px;
 }/*# sourceMappingURL=index.css.map */
