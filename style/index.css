@@ -79,6 +79,7 @@ body {
 .container main {
   display: flex;
   flex-direction: column;
+  background-color: rgb(246, 248, 250);
 }
 .container main .topBar {
   position: fixed;
@@ -398,4 +399,105 @@ body {
   font-size: 14px;
   font-weight: 500;
   color: rgba(39, 50, 64, 0.5);
+}
+.container main .dashboard .overview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 75vw;
+  height: 550px;
+  margin-left: 40px;
+  margin-top: 33px;
+  background-color: white;
+  border-radius: 10px;
+  padding-bottom: 9px;
+}
+.container main .dashboard .overview_search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5vh;
+}
+.container main .dashboard .overview_search h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(31, 56, 76);
+  padding-top: 29px;
+  padding-left: 32px;
+}
+.container main .dashboard .overview_search input {
+  margin-top: 29px;
+  margin-right: 32px;
+  width: 198px;
+  height: 50px;
+  background-color: rgb(246, 248, 250);
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 10px;
+  border: none;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 19px;
+}
+.container main .dashboard .overview_search input::-moz-placeholder {
+  color: rgb(176, 176, 176);
+  font-size: 16px;
+  font-weight: 400;
+}
+.container main .dashboard .overview_search input::placeholder {
+  color: rgb(176, 176, 176);
+  font-size: 16px;
+  font-weight: 400;
+}
+.container main .dashboard .overview_list {
+  margin-right: 32px;
+  margin-left: 32px;
+}
+.container main .dashboard .overview_list .colored {
+  height: 55px;
+  background-color: rgba(243, 246, 249, 0.5);
+}
+.container main .dashboard .overview_list .uncolored {
+  height: 55px;
+  background-color: white;
+}
+.container main .dashboard .overview_list .columnNames {
+  height: 43px;
+  background-color: rgb(243, 246, 249);
+  border-radius: 5px;
+}
+.container main .dashboard .overview_list .columnNames span {
+  font-size: 14;
+  font-weight: 600;
+  color: rgb(70, 78, 95);
+}
+.container main .dashboard .overview_list li {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+}
+.container main .dashboard .overview_list li span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  text-align: left;
+}
+.container main .dashboard .overview_list li span:nth-child(1) {
+  width: 5%;
+  padding-left: 20px;
+}
+.container main .dashboard .overview_list li span:nth-child(2) {
+  width: 25%;
+}
+.container main .dashboard .overview_list li span:nth-child(3) {
+  width: 25%;
+}
+.container main .dashboard .overview_list li span:nth-child(4) {
+  width: 25%;
+}
+.container main .dashboard .overview_list li span:nth-child(5) {
+  width: 15%;
 }/*# sourceMappingURL=index.css.map */
