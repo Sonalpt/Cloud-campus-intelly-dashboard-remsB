@@ -169,8 +169,8 @@ body {
   margin-top: 33px;
 }
 .container main .dashboard .percentages_container {
-  width: 18%;
-  margin-right: 33px;
+  width: 15vw;
+  margin-right: 2.25vw;
   display: flex;
   flex-direction: row;
   padding: 15px;
@@ -223,8 +223,8 @@ body {
 }
 .container main .dashboard .statistics {
   display: flex;
-  flex-direction: column;
-  width: 80vw;
+  flex-direction: row;
+  width: 75vw;
   height: 520px;
   margin-left: 40px;
   margin-top: 33px;
@@ -232,7 +232,8 @@ body {
   border-radius: 10px;
 }
 .container main .dashboard .statistics_container {
-  width: 50vw;
+  width: 60%;
+  height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -274,7 +275,7 @@ body {
   width: 10%;
 }
 .container main .dashboard .statistics_container .numbersAndBars .numbers {
-  height: 398px;
+  height: 410px;
   display: flex;
   flex-direction: column;
   color: rgb(147, 147, 147);
@@ -286,7 +287,7 @@ body {
 .container main .dashboard .statistics_container .numbersAndBars .numbers .number {
   width: 30px;
   height: 9.09%;
-  margin-bottom: 17px;
+  margin-bottom: 15px;
 }
 .container main .dashboard .statistics_container .numbersAndBars .barsAndMonths {
   display: flex;
@@ -298,19 +299,75 @@ body {
   margin-right: 21px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   height: 407px;
   max-height: 407px;
+  position: relative;
 }
 .container main .dashboard .statistics_container .numbersAndBars .barsAndMonths .data .emptyBar {
   width: 20px;
   min-height: 379px;
   background-color: rgb(237, 231, 253);
 }
+.container main .dashboard .statistics_container .numbersAndBars .barsAndMonths .data .filledBar {
+  transform-origin: bottom;
+  position: absolute;
+  top: 93%;
+  width: 20px;
+  background-color: rgb(80, 65, 120);
+  transform-origin: bottom;
+  height: 10px;
+}
+.container main .dashboard .statistics_container .numbersAndBars .barsAndMonths .data .filledBar1 {
+  transform: scaleY(29.6);
+}
+.container main .dashboard .statistics_container .numbersAndBars .barsAndMonths .data .filledBar2 {
+  transform: scaleY(19);
+}
+.container main .dashboard .statistics_container .numbersAndBars .barsAndMonths .data .filledBar3 {
+  transform: scaleY(24);
+}
+.container main .dashboard .statistics_container .numbersAndBars .barsAndMonths .data .filledBar4 {
+  transform: scaleY(10.6);
+}
+.container main .dashboard .statistics_container .numbersAndBars .barsAndMonths .data .filledBar5 {
+  transform: scaleY(19);
+}
+.container main .dashboard .statistics_container .numbersAndBars .barsAndMonths .data .filledBar6 {
+  transform: scaleY(26.8);
+}
+.container main .dashboard .statistics_container .numbersAndBars .barsAndMonths .data .filledBar7 {
+  transform: scaleY(15.4);
+}
+.container main .dashboard .statistics_container .numbersAndBars .barsAndMonths .data .filledBar8 {
+  transform: scaleY(33.2);
+}
+.container main .dashboard .statistics_container .numbersAndBars .barsAndMonths .data .filledBar9 {
+  transform: scaleY(26.8);
+}
+.container main .dashboard .statistics_container .numbersAndBars .barsAndMonths .data .filledBar10 {
+  transform: scaleY(21);
+}
+.container main .dashboard .statistics_container .numbersAndBars .barsAndMonths .data .filledBar11 {
+  transform: scaleY(30.8);
+}
+.container main .dashboard .statistics_container .numbersAndBars .barsAndMonths .data .filledBar12 {
+  transform: scaleY(25.8);
+}
 .container main .dashboard .statistics_container .numbersAndBars .barsAndMonths .data .month {
   font-size: 12px;
   font-weight: 600;
   color: rgb(147, 147, 147);
   margin-top: 12px;
+}
+.container main .dashboard .statistics .listContainer {
+  margin-top: 25px;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.container main .dashboard .statistics .listContainer h2 {
+  font-size: 18px;
+  font-weight: 600;
 }/*# sourceMappingURL=index.css.map */

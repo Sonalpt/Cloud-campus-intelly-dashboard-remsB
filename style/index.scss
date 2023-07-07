@@ -166,8 +166,8 @@ body {
                 margin-left: 40px;
                 margin-top: 33px;
                 &_container {
-                    width: 18%;
-                    margin-right: 33px;
+                    width: 15vw;
+                    margin-right: 2.25vw;
                     display: flex;
                     flex-direction: row;
                     padding: 15px;
@@ -225,15 +225,16 @@ body {
             }
             .statistics {
                 display: flex;
-                flex-direction: column;
-                width: 80vw;
+                flex-direction: row;
+                width: 75vw;
                 height: 520px;
                 margin-left: 40px;
                 margin-top: 33px;
                 background-color: white;
                 border-radius: 10px;
                 &_container {
-                    width: 50vw;
+                    width: 60%;
+                    height: 100%;
                     display: flex;
                     flex-direction: column;
                     .titleAndDate {
@@ -273,7 +274,7 @@ body {
                         flex-direction: row;
                         width: 10%;
                         .numbers {
-                            height: 398px;
+                            height: 410px;
                             display: flex;
                             flex-direction: column;
                             color: rgba(147, 147, 147, 1);
@@ -284,7 +285,7 @@ body {
                             .number {
                                 width: 30px;
                                 height: 9.09%;
-                                margin-bottom: 17px;
+                                margin-bottom: 15px;
                             }
                         }
                         .barsAndMonths {
@@ -296,27 +297,77 @@ body {
                                 margin-right: 21px;
                                 display: flex;
                                 flex-direction: column;
-                                justify-content: center;
                                 align-items: center;
                                 height: 407px;
                                 max-height: 407px;
+                                position: relative;
+                                
                                 .emptyBar {
+                                    
                                     width: 20px;
                                     min-height: 379px;
                                     background-color: rgba(237, 231, 253, 1);
                                 }
-                                // .filledBar {
-                                //     width: 20px;
-                                //     min-height: 300px;
-                                //     background-color: rgba(80, 65, 120, 1);
-                                //     transform: translateY(-100%);
-                                // }
-                                // .filledBar1 {
-                                //     width: 20px;
-                                //     height: 100%;
-                                //     background-color: rgba(80, 65, 120, 1);
+                                .filledBar {
                                     
-                                // }
+                                    transform-origin: bottom;
+                                    position: absolute;
+                                    top: 93%;
+                                    width: 20px;
+                                    background-color: rgba(80, 65, 120, 1);
+                                    transform-origin: bottom;
+                                    height: 10px;
+                                    
+                                    
+                                }
+                                .filledBar1 {
+                                    transform: scaleY(29.6);
+                                }
+                                .filledBar2 {
+                                    
+                                    transform: scaleY(19);
+                                }
+                                .filledBar3 {
+                                 
+                                    transform: scaleY(24);
+                                }
+                                .filledBar4 {
+                                   
+                                    transform: scaleY(10.6);
+                                }
+                                .filledBar5 {
+                                    
+                                    transform: scaleY(19);
+                                }
+                                .filledBar6 {
+                                    
+                                    transform: scaleY(26.8);
+                                }
+                                .filledBar7 {
+                                   
+                                    transform: scaleY(15.4);
+                                }
+                                .filledBar8 {
+                                   
+                                    transform: scaleY(33.2);
+                                }
+                                .filledBar9 {
+                                    
+                                    transform: scaleY(26.8);
+                                }
+                                .filledBar10 {
+                                    
+                                    transform: scaleY(21);
+                                }
+                                .filledBar11 {
+                                   
+                                    transform: scaleY(30.8);
+                                }
+                                .filledBar12 {
+                                    
+                                    transform: scaleY(25.8);
+                                }
+                                
                                 .month {
                                     font-size: 12px;
                                     font-weight: 600;
@@ -325,6 +376,17 @@ body {
                                 }
                             }
                         }
+                    }
+                }
+                .listContainer {
+                    margin-top: 25px;
+                    width: 60%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    h2 {
+                        font-size: 18px;
+                        font-weight: 600;
                     }
                 }
                 
