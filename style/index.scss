@@ -298,15 +298,24 @@ body {
                                 flex-direction: column;
                                 justify-content: center;
                                 align-items: center;
+                                height: 407px;
+                                max-height: 407px;
                                 .emptyBar {
                                     width: 20px;
-                                    height: 379px;
+                                    min-height: 379px;
                                     background-color: rgba(237, 231, 253, 1);
                                 }
                                 // .filledBar {
                                 //     width: 20px;
-                                //     height: 379px;
+                                //     min-height: 300px;
                                 //     background-color: rgba(80, 65, 120, 1);
+                                //     transform: translateY(-100%);
+                                // }
+                                // .filledBar1 {
+                                //     width: 20px;
+                                //     height: 100%;
+                                //     background-color: rgba(80, 65, 120, 1);
+                                    
                                 // }
                                 .month {
                                     font-size: 12px;

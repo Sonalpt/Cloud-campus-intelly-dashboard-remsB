@@ -300,10 +300,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 407px;
+  max-height: 407px;
 }
 .container main .dashboard .statistics_container .numbersAndBars .barsAndMonths .data .emptyBar {
   width: 20px;
-  height: 379px;
+  min-height: 379px;
   background-color: rgb(237, 231, 253);
 }
 .container main .dashboard .statistics_container .numbersAndBars .barsAndMonths .data .month {
