@@ -169,7 +169,7 @@ body {
   margin-top: 33px;
 }
 .container main .dashboard .percentages_container {
-  width: 15vw;
+  width: 15.5vw;
   margin-right: 2.25vw;
   display: flex;
   flex-direction: row;
@@ -224,20 +224,23 @@ body {
 .container main .dashboard .statistics {
   display: flex;
   flex-direction: row;
+  align-items: center;
   width: 75vw;
-  height: 520px;
+  height: 530px;
   margin-left: 40px;
   margin-top: 33px;
   background-color: white;
   border-radius: 10px;
 }
 .container main .dashboard .statistics_container {
-  width: 60%;
+  width: 65%;
   height: 100%;
   display: flex;
   flex-direction: column;
+  align-self: baseline;
 }
 .container main .dashboard .statistics_container .titleAndDate {
+  width: 80%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -245,7 +248,7 @@ body {
   margin-top: 25px;
   margin-left: 25px;
   margin-right: 52.5px;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 }
 .container main .dashboard .statistics_container .titleAndDate h2 {
   font-size: 18px;
@@ -296,7 +299,7 @@ body {
   margin-left: 13px;
 }
 .container main .dashboard .statistics_container .numbersAndBars .barsAndMonths .data {
-  margin-right: 21px;
+  margin-right: 2vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -360,14 +363,39 @@ body {
   color: rgb(147, 147, 147);
   margin-top: 12px;
 }
+.container main .dashboard .statistics .straightBar {
+  min-width: 0.5px;
+  min-height: 461px;
+  background-color: rgb(214, 214, 214);
+  margin-right: 31.5px;
+}
 .container main .dashboard .statistics .listContainer {
   margin-top: 25px;
-  width: 60%;
+  width: 30%;
   height: 100%;
   display: flex;
   flex-direction: column;
+  margin-right: 32px;
+  align-self: baseline;
 }
 .container main .dashboard .statistics .listContainer h2 {
   font-size: 18px;
   font-weight: 600;
+  margin-bottom: 25px;
+}
+.container main .dashboard .statistics .listContainer ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+.container main .dashboard .statistics .listContainer ul li span:nth-child(1) {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(39, 50, 64);
+}
+.container main .dashboard .statistics .listContainer ul li span:nth-child(2) {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(39, 50, 64, 0.5);
 }/*# sourceMappingURL=index.css.map */
