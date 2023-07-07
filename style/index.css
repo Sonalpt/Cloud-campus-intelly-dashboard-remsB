@@ -6,19 +6,19 @@ body {
   height: 100vh;
 }
 
-.sideAndTopBar {
+.container {
   display: flex;
   flex-direction: row;
 }
-.sideAndTopBar aside {
+.container aside {
   width: 20vw;
   height: 100vh;
 }
-.sideAndTopBar aside nav {
+.container aside nav {
   width: 100%;
   height: 100%;
 }
-.sideAndTopBar aside nav .intellyBrand {
+.container aside nav .intellyBrand {
   height: 64px;
   width: 100%;
   display: flex;
@@ -27,23 +27,23 @@ body {
   justify-content: center;
   box-shadow: 0px 1px 0px 0px rgba(229, 229, 229, 0.65);
 }
-.sideAndTopBar aside nav .navigation {
+.container aside nav .navigation {
   color: #767D87;
   height: 90%;
   width: 100%;
   background-color: rgba(1, 0, 57, 0.04);
 }
-.sideAndTopBar aside nav .navigation_section {
+.container aside nav .navigation_section {
   width: 75%;
   padding-top: 40px;
   padding-left: 10%;
 }
-.sideAndTopBar aside nav .navigation_section h3 {
+.container aside nav .navigation_section h3 {
   font-size: 11px;
   letter-spacing: 1px;
   margin-bottom: 15%;
 }
-.sideAndTopBar aside nav .navigation_section_component {
+.container aside nav .navigation_section_component {
   width: 100%;
   height: 24px;
   display: flex;
@@ -51,32 +51,37 @@ body {
   align-items: center;
   margin-bottom: 24px;
 }
-.sideAndTopBar aside nav .navigation_section_component img {
+.container aside nav .navigation_section_component img {
   width: 24px;
   height: 24px;
 }
-.sideAndTopBar aside nav .navigation_section_component span {
+.container aside nav .navigation_section_component span {
   width: 80%;
   font-size: 16px;
   font-weight: 400;
   padding-left: 12px;
 }
-.sideAndTopBar aside nav .navigation_section_component.selected {
+.container aside nav .navigation_section_component.selected {
   color: #504178;
   height: 51px;
   background-color: rgba(80, 65, 120, 0.2);
   border-radius: 10px;
 }
-.sideAndTopBar aside nav .navigation_section_component.selected img {
+.container aside nav .navigation_section_component.selected img {
   width: 24px;
   height: 24px;
   padding-left: 7.5%;
 }
-.sideAndTopBar aside nav .navigation_section_component.selected span {
+.container aside nav .navigation_section_component.selected span {
   width: 80%;
   padding-left: 12px;
 }
-.sideAndTopBar .topBar {
+.container main {
+  display: flex;
+  flex-direction: column;
+}
+.container main .topBar {
+  position: fixed;
   width: 80vw;
   height: 64px;
   display: flex;
@@ -84,14 +89,14 @@ body {
   align-items: center;
   box-shadow: 0px 1px 0px 0px rgb(229, 229, 229);
 }
-.sideAndTopBar .topBar .searchBar {
+.container main .topBar .searchBar {
   width: 50%;
   margin-left: 32px;
   height: 32px;
   background-color: rgba(1, 0, 57, 0.04);
   border-radius: 5px;
 }
-.sideAndTopBar .topBar .searchBar input {
+.container main .topBar .searchBar input {
   color: rgb(31, 56, 76);
   font-size: 12px;
   font-weight: 300;
@@ -101,17 +106,17 @@ body {
   background-color: rgba(1, 0, 57, 0);
   padding-left: 15px;
 }
-.sideAndTopBar .topBar .searchBar input::-moz-placeholder {
+.container main .topBar .searchBar input::-moz-placeholder {
   color: rgba(31, 56, 76, 0.4);
 }
-.sideAndTopBar .topBar .searchBar input::placeholder {
+.container main .topBar .searchBar input::placeholder {
   color: rgba(31, 56, 76, 0.4);
 }
-.sideAndTopBar .topBar .searchBar img {
+.container main .topBar .searchBar img {
   width: 12px;
   height: 12px;
 }
-.sideAndTopBar .topBar .enterprise {
+.container main .topBar .enterprise {
   margin-left: 30%;
   margin-right: 32px;
   width: 25%;
@@ -120,7 +125,7 @@ body {
   flex-direction: row;
   align-items: center;
 }
-.sideAndTopBar .topBar .enterprise_icon {
+.container main .topBar .enterprise_icon {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -130,18 +135,88 @@ body {
   width: 32px;
   border-radius: 30px;
 }
-.sideAndTopBar .topBar .enterprise_icon img {
+.container main .topBar .enterprise_icon img {
   width: 16px;
   height: 16px;
 }
-.sideAndTopBar .topBar .enterprise span {
+.container main .topBar .enterprise span {
   padding-left: 12px;
   padding-right: 3px;
 }
-.sideAndTopBar .topBar .enterprise_notification {
+.container main .topBar .enterprise_notification {
   padding-left: 32px;
 }
-.sideAndTopBar .topBar .enterprise_notification img {
+.container main .topBar .enterprise_notification img {
   width: 12.8px;
   height: 16px;
+}
+.container main .dashboard {
+  background-color: rgb(246, 248, 250);
+  height: 100vh;
+  width: 80vw;
+}
+.container main .dashboard h1 {
+  margin-top: 97px;
+  margin-left: 40px;
+  font-size: 24px;
+}
+.container main .dashboard .percentages {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-left: 40px;
+  margin-top: 33px;
+}
+.container main .dashboard .percentages_container {
+  width: 18%;
+  margin-right: 33px;
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  background-color: white;
+  border-radius: 10px;
+}
+.container main .dashboard .percentages_container .icon1 {
+  background: linear-gradient(135deg, #504178 0%, #FF7B8A 100%);
+}
+.container main .dashboard .percentages_container .icon2 {
+  background: linear-gradient(135deg, #42BA17 0%, #9FF182 100%);
+}
+.container main .dashboard .percentages_container .icon3 {
+  background: linear-gradient(135deg, #5A6ACF 0%, #FF7B8A 100%);
+}
+.container main .dashboard .percentages_container .icon4 {
+  background: linear-gradient(135deg, #D32136 0%, #FF7B8A 100%);
+}
+.container main .dashboard .percentages_container .icon {
+  height: 63px;
+  width: 63px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-right: 18px;
+}
+.container main .dashboard .percentages_container .icon img {
+  height: 39px;
+  width: 39px;
+}
+.container main .dashboard .percentages_container .details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container main .dashboard .percentages_container .details .stats span:nth-child(1) {
+  font-size: 24px;
+  font-weight: 600;
+}
+.container main .dashboard .percentages_container .details .stats span:nth-child(3) {
+  font-size: 12px;
+  font-weight: 600;
+  color: rgb(20, 157, 82);
+}
+.container main .dashboard .percentages_container .details span.name {
+  font-size: 14px;
+  font-weight: 400;
 }/*# sourceMappingURL=index.css.map */

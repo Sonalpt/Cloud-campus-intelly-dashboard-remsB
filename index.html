@@ -8,7 +8,8 @@
         <title>Intelly Dashboard - remsB</title>
     </head>
     <body>
-        <div class="sideAndTopBar">
+
+        <div class="container">
             <!-- la barre de navigation statique contenant également le logo "intelly" -->
             <aside>
                 <nav>
@@ -73,27 +74,89 @@
                 </nav>
             </aside>
 
-            <!-- La topbar de recherche avec l'entreprise et les notifications -->
-            <div class="topBar">
+            <!-- Le container de la topbar fixed + le contenu dashboard -->
+            <main class="mainContainer">
+                <div class="topBar">
 
-                <div class="searchBar">
-                    <input type="search" name="search" id="search"
-                        placeholder="Search">
-                    <img src="./assets/Icon.png" alt>
-                </div>
-                <div class="enterprise">
-                    <div class="enterprise_icon">
-                        <img src="./assets/Emoticon.png" alt>
+                    <div class="searchBar">
+                        <input type="search" name="search" id="search"
+                            placeholder="Search">
+                        <img src="./assets/Icon.png" alt>
                     </div>
-                    <span>Delicious Burger</span>
-                    <img src="./assets/Icon/Glyph/Chevron-down.png" alt>
+                    <div class="enterprise">
+                        <div class="enterprise_icon">
+                            <img src="./assets/Emoticon.png" alt>
+                        </div>
+                        <span>Delicious Burger</span>
+                        <img src="./assets/Icon/Glyph/Chevron-down.png" alt>
 
-                    <div class="enterprise_notification">
-                        <img src="./assets/Notif Icon.png" alt>
+                        <div class="enterprise_notification">
+                            <img src="./assets/Notif Icon.png" alt>
+                        </div>
                     </div>
+
+                </div>
+                <div class="dashboard">
+                    <h1>Dashboard</h1>
+                    <div class="percentages">
+                        <div class="percentages_container">
+                            <div class="icon icon1">
+                                <img src="./assets/camion.png" alt>
+                            </div>
+                            <div class="details">
+                                <div class="stats">
+                                    <span>2.409</span>
+                                    <img src="./assets/Arrow Up.png" alt>
+                                    <span>2.1%</span>
+                                </div>
+                                <span class="name">Jumlah Pemesan</span>
+                            </div>
+
+                        </div>
+                        <div class="percentages_container">
+                            <div class="icon icon2">
+                                <img src="./assets/camion.png" alt>
+                            </div>
+                            <div class="details">
+                                <div class="stats">
+                                    <span>68.9%</span>
+                                </div>
+                                <span class="name">Pesanan Selesai</span>
+                            </div>
+
+                        </div>
+                        <div class="percentages_container">
+                            <div class="icon icon3">
+                                <img src="./assets/camion.png" alt>
+                            </div>
+                            <div class="details">
+                                <div class="stats">
+                                    <span>68.9%</span>
+                                </div>
+                                <span class="name">KPI Driver</span>
+                            </div>
+
+                        </div>
+                        <div class="percentages_container">
+                            <div class="icon icon4">
+                                <img src="./assets/camion.png" alt>
+                            </div>
+                            <div class="details">
+                                <div class="stats">
+                                    <span>3.509</span>
+                                </div>
+                                <span class="name">Total Customer</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="statistics"></div>
+                    <div class="overview"></div>
+                    <div class="pages"></div>
                 </div>
 
-            </div>
+            </main>
+
         </div>
 
     </body>

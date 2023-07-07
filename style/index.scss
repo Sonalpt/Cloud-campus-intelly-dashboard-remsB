@@ -7,7 +7,7 @@ body {
     height: 100vh;
 }
 
-.sideAndTopBar {
+.container {
     display: flex;
     flex-direction: row;
     aside {
@@ -77,75 +77,155 @@ body {
             }
         }
     }
-    .topBar {
-        width: 80vw;
-        height: 64px;
+    main {
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        box-shadow: 0px 1px 0px 0px rgba(229, 229, 229, 1);
-
-        .searchBar {
-            width: 50%;
-            margin-left: 32px;
-            height: 32px;
-            background-color: rgba(1, 0, 57, 0.04);
-            border-radius: 5px;
-            input {
-                color: rgb(31, 56, 76);
-                font-size: 12px;
-                font-weight: 300;
-                width: 95%;
-                height: 100%;
-                border: none;
-                background-color: rgba(1, 0, 57, 0.0);
-                padding-left: 15px;
-                &::placeholder {
-                    color: rgba(31, 56, 76, 0.4);
-                }
-            }
-            img {
-                width: 12px;
-                height: 12px;
-            }
-
-        }
-        .enterprise {
-            margin-left: 30%;
-            margin-right: 32px;
-            width: 25%;
-            height: 32px;
+        flex-direction: column;
+        .topBar {
+            position: fixed;
+            width: 80vw;
+            height: 64px;
             display: flex;
             flex-direction: row;
             align-items: center;
-            &_icon {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                background-color: #FFE6CC;
+            box-shadow: 0px 1px 0px 0px rgba(229, 229, 229, 1);
+    
+            .searchBar {
+                width: 50%;
+                margin-left: 32px;
                 height: 32px;
-                width: 32px;
-                border-radius: 30px;
+                background-color: rgba(1, 0, 57, 0.04);
+                border-radius: 5px;
+                input {
+                    color: rgb(31, 56, 76);
+                    font-size: 12px;
+                    font-weight: 300;
+                    width: 95%;
+                    height: 100%;
+                    border: none;
+                    background-color: rgba(1, 0, 57, 0.0);
+                    padding-left: 15px;
+                    &::placeholder {
+                        color: rgba(31, 56, 76, 0.4);
+                    }
+                }
                 img {
-                    width: 16px;
-                    height: 16px;
+                    width: 12px;
+                    height: 12px;
+                }
+    
+            }
+            .enterprise {
+                margin-left: 30%;
+                margin-right: 32px;
+                width: 25%;
+                height: 32px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                &_icon {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #FFE6CC;
+                    height: 32px;
+                    width: 32px;
+                    border-radius: 30px;
+                    img {
+                        width: 16px;
+                        height: 16px;
+                    }
+                }
+                span {
+                    padding-left: 12px;
+                    padding-right: 3px;
+                }
+                
+                &_notification {
+                    padding-left: 32px;
+                    img {
+                        width: 12.8px;
+                        height: 16px;
+                    }
                 }
             }
-            span {
-                padding-left: 12px;
-                padding-right: 3px;
+        }
+        .dashboard {
+            background-color: rgba(246, 248, 250, 1);
+            height: 100vh;
+            width: 80vw;
+            h1 {
+                margin-top: calc(64px + 33px);
+                margin-left: 40px;
+                font-size: 24px;
             }
-            
-            &_notification {
-                padding-left: 32px;
-                img {
-                    width: 12.8px;
-                    height: 16px;
+            .percentages {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                margin-left: 40px;
+                margin-top: 33px;
+                &_container {
+                    width: 18%;
+                    margin-right: 33px;
+                    display: flex;
+                    flex-direction: row;
+                    padding: 15px;
+                    background-color: white;
+                    border-radius: 10px;
+                    .icon1 {
+                        background: linear-gradient(135deg, #504178 0%, #FF7B8A 100%);
+                    }
+                    .icon2 {
+                        background: linear-gradient(135deg, #42BA17 0%, #9FF182 100%);
+                    }
+                    .icon3 {
+                        background: linear-gradient(135deg, #5A6ACF 0%, #FF7B8A 100%);
+                    }
+                    .icon4 {
+                        background: linear-gradient(135deg, #D32136 0%, #FF7B8A 100%);
+                        
+                    }
+                    .icon {
+                        height: 63px;
+                        width: 63px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 10px;
+                        margin-right: 18px;
+                        img {
+                            height: 39px;
+                            width: 39px;
+                        }
+                    }
+                    .details {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        .stats {
+                            span:nth-child(1) {
+                                font-size: 24px;
+                                font-weight: 600;
+                            }
+                            span:nth-child(3) {
+                                font-size: 12px;
+                                font-weight: 600;
+                                color: rgba(20, 157, 82, 1);
+                            }
+                        }
+                        span.name {
+                            font-size: 14px;
+                            font-weight: 400;
+                            
+                        }
+                    }
                 }
             }
         }
     }
+   
 }
 
 
