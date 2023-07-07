@@ -1,4 +1,100 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+@keyframes animateStatistics1 {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(29.6);
+  }
+}
+@keyframes animateStatistics2 {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(19);
+  }
+}
+@keyframes animateStatistics3 {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(24);
+  }
+}
+@keyframes animateStatistics4 {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(10.6);
+  }
+}
+@keyframes animateStatistics5 {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(19);
+  }
+}
+@keyframes animateStatistics6 {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(26.8);
+  }
+}
+@keyframes animateStatistics7 {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(15.4);
+  }
+}
+@keyframes animateStatistics8 {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(33.2);
+  }
+}
+@keyframes animateStatistics9 {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(26.8);
+  }
+}
+@keyframes animateStatistics10 {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(21);
+  }
+}
+@keyframes animateStatistics11 {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(30.8);
+  }
+}
+@keyframes animateStatistics12 {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(25.8);
+  }
+}
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
@@ -336,39 +432,75 @@ body {
   height: 10px;
 }
 .container main .dashboard .statistics_container .numbersAndBars .barsAndMonths .data .filledBar1 {
+  animation-name: animateStatistics1;
+  animation-duration: 350ms ease;
+  animation-fill-mode: forwards;
   transform: scaleY(29.6);
 }
 .container main .dashboard .statistics_container .numbersAndBars .barsAndMonths .data .filledBar2 {
+  animation-name: animateStatistics2;
+  animation-duration: 350ms ease;
+  animation-fill-mode: forwards;
   transform: scaleY(19);
 }
 .container main .dashboard .statistics_container .numbersAndBars .barsAndMonths .data .filledBar3 {
+  animation-name: animateStatistics3;
+  animation-duration: 350ms ease;
+  animation-fill-mode: forwards;
   transform: scaleY(24);
 }
 .container main .dashboard .statistics_container .numbersAndBars .barsAndMonths .data .filledBar4 {
+  animation-name: animateStatistics4;
+  animation-duration: 350ms ease;
+  animation-fill-mode: forwards;
   transform: scaleY(10.6);
 }
 .container main .dashboard .statistics_container .numbersAndBars .barsAndMonths .data .filledBar5 {
+  animation-name: animateStatistics5;
+  animation-duration: 350ms ease;
+  animation-fill-mode: forwards;
   transform: scaleY(19);
 }
 .container main .dashboard .statistics_container .numbersAndBars .barsAndMonths .data .filledBar6 {
+  animation-name: animateStatistics6;
+  animation-duration: 350ms ease;
+  animation-fill-mode: forwards;
   transform: scaleY(26.8);
 }
 .container main .dashboard .statistics_container .numbersAndBars .barsAndMonths .data .filledBar7 {
+  animation-name: animateStatistics7;
+  animation-duration: 350ms ease;
+  animation-fill-mode: forwards;
   transform: scaleY(15.4);
 }
 .container main .dashboard .statistics_container .numbersAndBars .barsAndMonths .data .filledBar8 {
+  animation-name: animateStatistics8;
+  animation-duration: 350ms ease;
+  animation-fill-mode: forwards;
   transform: scaleY(33.2);
 }
 .container main .dashboard .statistics_container .numbersAndBars .barsAndMonths .data .filledBar9 {
+  animation-name: animateStatistics9;
+  animation-duration: 350ms ease;
+  animation-fill-mode: forwards;
   transform: scaleY(26.8);
 }
 .container main .dashboard .statistics_container .numbersAndBars .barsAndMonths .data .filledBar10 {
+  animation-name: animateStatistics10;
+  animation-duration: 350ms ease;
+  animation-fill-mode: forwards;
   transform: scaleY(21);
 }
 .container main .dashboard .statistics_container .numbersAndBars .barsAndMonths .data .filledBar11 {
+  animation-name: animateStatistics11;
+  animation-duration: 350ms ease;
+  animation-fill-mode: forwards;
   transform: scaleY(30.8);
 }
 .container main .dashboard .statistics_container .numbersAndBars .barsAndMonths .data .filledBar12 {
+  animation-name: animateStatistics12;
+  animation-duration: 350ms ease;
+  animation-fill-mode: forwards;
   transform: scaleY(25.8);
 }
 .container main .dashboard .statistics_container .numbersAndBars .barsAndMonths .data .month {
